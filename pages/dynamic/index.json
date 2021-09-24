@@ -1,0 +1,8 @@
+{
+  "pullRefresh": true,
+  "allowsBounceVertical": "YES",
+  "usingComponents": {
+    "suspension": "/components/suspension/suspension",
+    "dataerror":"/components/dataerror/dataerror"
+  }
+}

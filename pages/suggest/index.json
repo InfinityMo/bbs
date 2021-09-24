@@ -1,0 +1,9 @@
+{
+  "pullRefresh": true,
+  "allowsBounceVertical": "YES",
+  "usingComponents": {
+    "adpotadvise": "/components/adoptadvise/adoptadvise",
+    "monthadvise": "/components/monthadvise/monthadvise",
+    "suspension": "/components/suspension/suspension"
+  }
+}

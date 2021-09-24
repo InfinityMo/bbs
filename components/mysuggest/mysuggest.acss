@@ -1,0 +1,113 @@
+.user-data-page{
+  padding:0 15px ;
+}
+.mysuggest-page {
+ padding-bottom: 10px;
+}
+.mysuggest-scroll{
+  padding: 0 15px 0 15px;
+}
+.title {
+  /* padding-bottom: 10px; */
+  padding: 20px 0 10px 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+.advise-wrap {
+  box-sizing: border-box;
+}
+
+.advise {
+  position: relative;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 8px 10px rgba(80, 85, 105, 0.09), 2px 4px 16px rgba(80, 85, 105, 0.04), -2px 4px 16px rgba(80, 85, 105, 0.03), 0px -0.5px 1px rgba(80, 85, 105, 0.1);
+  border-radius: 4px;
+}
+
+.advise:last-child {
+  margin-bottom: 0;
+}
+
+.advise .date {
+  flex-shrink: 0;
+  padding-right: 15px;
+}
+
+.history .year {
+  padding: 20px 0 10px 0;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.month-date {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.month {
+  font-size: 12px;
+  line-height: 21px;
+  color: #777;
+}
+
+.suggests {
+  /* max-height: 42px; */
+  font-size: 14px;
+  line-height: 21px;
+}
+.suggest-content{
+  flex-grow: 1;
+}
+.rank-text-wrap {
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+.rank-img {
+  width: 32px;
+  height: 32px;
+}
+
+.rank-text {
+  font-size: 18px;
+  line-height: 21px;
+  color: #777;
+}
+
+.history-line {
+  padding-top: 20px;
+}
+
+ .history-line .text {
+  flex-shrink: 0;
+  padding: 0 10px;
+  font-size: 13px;
+  line-height: 21px;
+  color: #AAA;
+}
+
+.history-line .line {
+  width: 50%;
+  height: 1px;
+  background-color: #eee;
+}
+
+.mysuggest-dark .title {
+  color: #fff;
+}
+
+.anonymous-tip {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  right: 0;
+  bottom: 0
+}
+.mysuggest-dark  .advise {
+  background-color: #444;
+}

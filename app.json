@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/dynamic/index",
+    "pages/suggest/index",
+    "pages/publish/index",
+    "pages/user/index",
+    "pages/detail/dynamicinfo/index",
+    "pages/detail/feedback/index"
+  ],
+  "window": {
+    "defaultTitle": "畅言",
+    "allowsBounceVertical": "NO",
+    "pullRefresh": false
+  },
+  "tabBar": {
+    "textColor": "#404040",
+    "selectedColor": "#3296FA",
+    "backgroundColor": "#F5F5F9",
+    "items": [
+      {
+        "pagePath": "pages/dynamic/index",
+        "icon": "image/system/dynamic.png",
+        "activeIcon": "image/system/dynamicActive.png",
+        "name": "动态"
+      },
+      {
+        "pagePath": "pages/suggest/index",
+        "icon": "image/system/suggest.png",
+        "activeIcon": "image/system/suggestActive.png",
+        "name": "建议板"
+      },
+      {
+        "pagePath": "pages/publish/index",
+        "icon": "image/system/publish.png",
+        "activeIcon": "image/system/publishActive.png",
+        "name": "发布"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "icon": "image/system/user.png",
+        "activeIcon": "image/system/userActive.png",
+        "name": "我的"
+      }
+    ]
+  }
+}

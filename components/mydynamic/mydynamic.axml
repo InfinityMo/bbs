@@ -1,0 +1,41 @@
+<view class="user-data-page {{className}}">
+  <scroll-view a:if="{{dynamics.length>0}}" class="scroll-wrap {{dynamics[0].currentYear ? 'scroll-other':''}}" scroll-y="{{true}}" onScrollToLower="lower">
+    <view class="outter" a:for="{{dynamics}}" a:for-item="first">
+      <!-- 年 -->
+      <view class="year" a:if="{{!first.currentYear}}">{{first.year}}年</view>
+      <!-- 内容列表 -->
+      <!-- 按月份排列 -->
+      <view class="inner flex" a:for="{{first.list}}" a:for-item="inner">
+        <!-- 日期 -->
+        <view class="date">
+          <view class="day" a:if="{{inner.dateType==='1'}}">今天</view>
+          <view class="day" a:elif="{{inner.dateType==='0'}}">昨天</view>
+          <view a:else>
+            <view class="month-date">{{inner.day}}</view>
+            <text class="month">{{inner.month}}月</text></view>
+        </view>
+        <view class="dynamic-content-wrap-box">
+          <!-- 对应日期动态 -->
+          <view class="content-wrap flex {{!item.avatar||item.avatar.length<=0 ? 'none-picture-bg':''}}" a:for="{{inner.list}}" data-id="{{item.id}}" onTap="toDynamicDetail">
+            <!-- 图片 -->
+            <view class="content-img" a:if="{{item.avatar&&item.avatar.length>0}}">
+              <image a:if="{{item.avatar.length===1}}" class="img one-img" a:for="{{item.avatar}}" a:for-item="img" mode="aspectFill" src="{{img}}" />
+              <image a:if="{{item.avatar.length===2}}" class="img two-img" a:for="{{item.avatar}}" a:for-item="img" mode="aspectFill" src="{{img}}" />
+              <image a:if="{{item.avatar.length===4}}" class="img four-img" a:for="{{item.avatar}}" a:for-item="img" mode="aspectFill" src="{{img}}" />
+            </view>
+            <view class="words-wrap">
+              <view class="ell2 words"><text>{{item.content}}</text></view>
+              <view class="img-total" a:if="{{item.avatarCount>0}}">共{{item.avatarCount}}张</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="baseline-wrap flex-item-center" hidden="{{!baselineShow}}">
+      <view class="line"></view>
+      <text>我是有底线的</text>
+      <view class="line"></view>
+    </view>
+  </scroll-view>
+  <dataerror className="user-error-nodata" dataErrorShow="{{errorNodata}}" netWorkError="{{netWorkError}}" errorMsg="您还没有发表过动态哦~" />
+</view>

@@ -1,0 +1,132 @@
+/* 公共基础样式 */
+
+view, text {
+  word-break: break-all;
+  word-wrap:break-word
+}
+text{
+    word-break: break-word;
+}
+.flex {
+  display: flex;
+}
+
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-justify-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-item-center {
+  display: flex;
+  align-items: center;
+}
+.flex-baseline-center {
+  display: flex;
+  align-items: baseline;
+}
+.flex-item-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-between-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ell {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ell2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.ell3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+/* 暗黑模式 */
+
+.dark-mode {
+  color: #fff;
+  background-color: #1E1E1E;
+}
+
+/* 全局css */
+
+.num-support-active {
+  color: #1890FF!important;
+}
+
+.num-against-active {
+  color: #f66970!important;
+}
+
+/* 底线 */
+
+.baseline-wrap {
+  font-size: 15px;
+  color: #aaa;
+}
+
+.baseline-wrap text {
+  padding: 10px;
+  flex-shrink: 0;
+}
+
+.baseline-wrap .line {
+  width: 50%;
+  background-color: #eee;
+  height: 1px;
+}
+
+.error-nodata {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  font-size: 15px;
+  text-align: center;
+}
+.user-error-nodata{
+  padding-top: 80px;
+  /* height: calc() */
+}
+.error-text {
+  padding-top: 25px;
+  color: #333;
+}
+
+.dark-mode .error-text{
+  color: #fff
+}
+
+/* p评论换行 */
+.comment-flex .reply-user,.comment-flex .reply{
+  flex-shrink: 0;
+}
